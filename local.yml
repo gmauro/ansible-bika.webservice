@@ -6,5 +6,6 @@
 #   ansible-playbook -i localhost, local.yml [-e "@defaults/main.yml" ]
 - hosts: localhost
   connection: local
+  become_method: su
   tasks:
   - include: tasks/main.yml
