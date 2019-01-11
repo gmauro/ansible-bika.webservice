@@ -1,0 +1,10 @@
+- name: install system packages needed by bika.webservice
+  apt:
+    name: "{{ packages }}"
+    state: "{{ packages_state }}"
+    update_cache: "{{ update_cache }}"
+  vars:
+    packages:
+    - git
+    - supervisor
+  when: ansible_os_family == "Debian"

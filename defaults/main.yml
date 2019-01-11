@@ -1,0 +1,6 @@
+packages_state: present
+install_packages: yes
+update_cache: yes
+
+BIKA_USER: bika
+BIKA_USER_PW: bika

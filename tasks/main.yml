@@ -1,0 +1,7 @@
+- include_tasks: install_packages.yml
+  when: install_packages
+
+- include_tasks: user.yml
+
+- include_tasks: deploy.yml
+
